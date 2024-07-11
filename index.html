@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
 </head>
 
 <body>
@@ -16,6 +18,7 @@
             <a href="#projects">Projects</a>
         </nav>
     </header>
+    <div class="container">
     <div class="b1">
         <div class="box">
             <div class="head">
@@ -26,41 +29,42 @@
             </div>
         </div>
     </div>
-    <div class="container">
         <div id="about">
             <h2>About Me</h2>
             <div class="info">
-                <div class="home">
-                    <img src="images/user.png" alt="">
-                    <p>Suthar Kamlesh Parasbhai</p>
+                <div class="row">
+                    <div class="icon"><img src="images/user.png" alt=""></div>
+                    <div class="content"><p>Suthar Kamlesh Parasbhai</p></div>
                 </div>
-                <div class="home">
-                    <img src="images/home.png" alt="">
-                    <p>D-301 Shyam Heights, Godadara, Surat-395010, Gujarat, India.</p>
+                <div class="row">
+                    <div class="icon"><img src="images/home.png" alt=""></div>
+                    <div class="content"><p>D-301 Shyam Heights, Godadara, Surat-395010, Gujarat, India.</p></div>
                 </div>
-                <div class="home">
-                    <img src="images/phone.png" alt="">
-                    <p>+91 7990184911</p>
+                <div class="row">
+                    <div class="icon"><img src="images/phone.png" alt=""></div>
+                    <div class="content"><p>+91 7990184911</p></div>
                 </div>
-                <div class="home">
-                    <img src="images/mail1.png" alt="">
-                    <p>kamu7990184@gmail.com</p>
+                <div class="row">
+                    <div class="icon"><img src="images/mail1.png" alt=""></div>
+                    <div class="content"><p>kamu7990184gmailcom</p></div>
                 </div>
-                <div class="home">
-                    <img src="images/linkedin.png" alt="">
-                    <a href="https://www.linkedin.com/in/kamlesh-suthar-85255b249"
-                        style="text-decoration: none;">LinkedIn Profile</a>
+                <div class="row">
+                    <div class="icon"><img src="images/linkedin.png" alt=""></div>
+                    <div class="content"><a href="https://www.linkedin.com/in/kamlesh-suthar-85255b249"
+                        style="text-decoration: none;">LinkedIn Profile</a></div>
                 </div>
             </div>
-            <p>I’m a passionate front-end developer with over 1 years of experience creating dynamic user interfaces. My
+            <div class="description">
+                <h3>Description :</h3><p>I’m a passionate front-end developer with over 1 years of experience creating dynamic user interfaces. My
                 technical abilities span HTML, CSS, JavaScript, and various front-end frameworks. I thrive on solving
                 design challenges and delivering seamless web experiences. Whether it's optimizing performance,
                 enhancing accessibility, or collaborating with cross-functional teams, I'm committed to crafting
-                user-centric solutions</p>
+                user-centric solutions</p></div>
+            
         </div>
         <div id="education">
             <h2>Education</h2>
-            <div class="educate">
+            <div>
                 <table>
                     <tr>
                         <th>S.S.C.</th>
@@ -79,10 +83,29 @@
         </div>
         <div id="projects">
             <h2>Projects</h2>
+            <div class="details">
+                <div><h3>Registration Page :</h3></div>
+                <div class="desc"><span>Responsive Registration Page with proper form validation using JavaScript.</span>
+                    <span>Technologies used: HTML, CSS, JavaScript and BootStrap.</span></div>
+            </div>
+            <div class="details">
+                <div><h3>Netflix Clone :</h3></div>
+                <div class="desc"><span>Netflix Clone are created by reference from You Tube Channel: Code With Harry</span>
+                    <span>Technologies used: HTML and CSS</span></div>
+            </div>
             
         </div>
     </div>
     <footer>Made by Kamlesh Suthar</footer>
 </body>
-
+<script>
+    $(document).ready(function() {
+            $('.nav-link').on('click', function(e) {
+                e.preventDefault();
+                var target = $(this).data('target');
+                $('.content-section').removeClass('active');
+                $('#' + target).addClass('active');
+            });
+        });
+</script>
 </html>
