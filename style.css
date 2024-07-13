@@ -34,7 +34,9 @@ nav a:hover {
     color: black;
     border: 2px solid black;
 }
-
+.container{
+    margin-top: 35px;
+}
 .b1 {
     display: flex;
     justify-content: center;
@@ -133,18 +135,12 @@ td {
     padding: 15px;
 }
 .details{
-    
-    margin: 15px;
-    display: grid;
-    grid-template-columns: 15% 70%;
+
+    margin: 12px 12px;
 }
 
-.details h3{
-    /* width: 40%; */
-    margin-right: 12px;
-}
 .desc{
-    margin-left: 12px;
+    margin: 12px 0 18px 16px;
     display: flex;
     flex-direction: column;
 }
