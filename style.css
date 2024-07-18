@@ -35,7 +35,7 @@ nav a:hover {
     border: 2px solid black;
 }
 .container{
-    margin-top: 30px;
+    margin-top: 35px;
 }
 .b1 {
     display: flex;
@@ -191,5 +191,12 @@ footer {
     }
     .head p{
         font-size: 8px;
+    }
+    .description p{
+        font-size: 14px;
+    }
+    nav > a{
+        padding: 4px;
+        margin: 0 10px;
     }
 }
