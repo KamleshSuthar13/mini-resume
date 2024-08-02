@@ -97,10 +97,6 @@ nav a:hover {
     border-radius: 10px;
 }
 
-.hovered {
-    border: 1px solid skyblue;
-}
-
 #about>img {
     height: 20px;
     width: 20px;
@@ -149,7 +145,7 @@ td {
     flex-direction: column;
 }
 
-li{
+ul, li{
     padding: 10px;
 }
 
